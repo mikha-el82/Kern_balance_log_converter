@@ -1,7 +1,9 @@
 import datetime
 
+
 file_name = input("Name of the file to convert (excl. '.csv'): ") + ".csv"
 formatted_file_name = input("Name of the formatted file (excl. '.csv'): ") + ".csv"
+excel_file_name = formatted_file_name.replace(".csv", ".xlsx")
 first_row = "Datum;Hmotnost [g]; Uplynulý čas [hh:hh:ss];Uplynulý čas [h]; m/m0\n"
 
 with open(file_name) as datafile:
